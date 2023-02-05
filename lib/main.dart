@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipe3/recipe.dart';
+import 'package:recipe3/recipe_detail.dart';
 
 void main() {
   runApp(const RecipesApp());
@@ -54,7 +55,7 @@ class MyHomePage extends StatelessWidget {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context){
               // TODO: Replace return with return RecipeDetail()
-                  return Text('Detail Page');
+                  return RecipeDetail(recipe: recipes[index],);
             }));
           },child: buildRecipeCard(recipes[index]));
     },
