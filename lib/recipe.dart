@@ -4,6 +4,7 @@ class Recipe{
   int servings;
   List<Ingredient> ingredients; // Ingredient Class로 구성된 List
 
+
   //Recipe 공장
   //this는 생성자고 주문서 개념으로.
   //그럼 instance라는 게 생성이 됨
@@ -17,14 +18,15 @@ class Ingredient{
   double quantity;
 
   Ingredient(
-      this.name, this.measure, this.quantity,
+  this.quantity, this.measure, this.name,
         );
 }
+
 
 List<Recipe> recipes = [
   Recipe(
     'Spaghetti and Meatballs',
-    'assets/food.jpeg',
+    'assets/salad.jpg',
     4,
     [
       Ingredient(1, 'box', 'Spaghetti',),
@@ -34,7 +36,7 @@ List<Recipe> recipes = [
   ),
   Recipe(
     'Tomato Soup',
-    'assets/food.jpeg',
+    'assets/salad.jpg',
     2,
     [
       Ingredient(1, 'can', 'Tomato Soup',),
@@ -42,7 +44,7 @@ List<Recipe> recipes = [
   ),
   Recipe(
     'Grilled Cheese',
-    'assets/food.jpeg',
+    'assets/salad.jpg',
     1,
     [
       Ingredient(2, 'slices', 'Cheese',),
@@ -51,7 +53,7 @@ List<Recipe> recipes = [
   ),
   Recipe(
     'Chocolate Chip Cookies',
-    'assets/food.jpeg',
+    'assets/salad.jpg',
     24,
     [
       Ingredient(4, 'cups', 'flour',),
@@ -61,7 +63,7 @@ List<Recipe> recipes = [
   ),
   Recipe(
     'Taco Salad',
-    'assets/food.jpeg',
+    'assets/salad.jpg',
     1,
     [
       Ingredient(4, 'oz', 'nachos',),
@@ -72,7 +74,7 @@ List<Recipe> recipes = [
   ),
   Recipe(
     'Hawaiian Pizza',
-    'assets/food.jpeg',
+    'assets/salad.jpg',
     4,
     [
       Ingredient(1, 'item', 'pizza',),

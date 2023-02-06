@@ -47,7 +47,9 @@ class MyHomePage extends StatelessWidget {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context){
               // TODO: Replace return with return RecipeDetail()
-                  return RecipeDetail(recipe: recipes[index],);
+                  return RecipeDetail(
+                    recipe: recipes[index],
+                  );
             }));
           },child: buildRecipeCard(recipes[index]));
     },
@@ -64,11 +66,11 @@ class MyHomePage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            Image.asset(recipe.imageUrl!),
+            Image.asset(recipe.imageUrl),
             SizedBox(
               height: 10,
             ),
-            Text(recipe.label!,
+            Text(recipe.label,
               style: const TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.w700,
