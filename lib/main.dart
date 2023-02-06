@@ -28,17 +28,9 @@ class MyHomePage extends StatelessWidget {
 
 
 // 주문서를 Recipe class 공장으로 넣는 것
-  List<Recipe> recipes = [
-    Recipe('recipe number 1', 'assets/pony.png'),
-    Recipe('recipe number 2', 'assets/pony.png'),
-    Recipe('recipe number 3', 'assets/pony.png'),
-    Recipe('recipe number 4', 'assets/pony.png'),
-    Recipe('recipe number 5', 'assets/pony.png'),
-    Recipe('recipe number 6', 'assets/pony.png'),
-    Recipe('recipe number 7', 'assets/pony.png'),
-    Recipe('recipe number 8', 'assets/pony.png'),
-    Recipe('recipe number 9', 'assets/pony.png'),
-  ]; //Array가 각각 Recipe의 값이 들어간다
+
+
+ //Array가 각각 Recipe의 값이 들어간다
 
 
 
